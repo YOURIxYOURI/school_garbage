@@ -10,7 +10,7 @@ int function(int a, int b, int c, int f, int check);
 int main()
 {
     int a, b, c, f, check_char;
-    cout << "Podaj liczby: \n a: ";
+    cout << "Podaj liczby: \na: ";
     cin >> a;
     cout << "\nb: ";
     cin >> b;
@@ -21,8 +21,11 @@ int main()
     if (f == 2) {
         cout << "\n 1. wieksze 2. mniejsze 3. wieksze lub rowne 4. mniejsze lub rowne";
         cin >> check_char;
+        function(a, b, c, f, check_char);
+    }else{
+        function(a, b, c, f, NULL);
     }
-    function(a,b,c,f,check_char);
+    
 }
 
 int function(int a, int b, int c, int f, int check) {
