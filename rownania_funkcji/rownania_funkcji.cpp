@@ -1,17 +1,15 @@
-﻿// rownania_funkcji.cpp : Ten plik zawiera funkcję „main”. W nim rozpoczyna się i kończy wykonywanie programu.
-//
-
 #include <iostream>
 
 using namespace std;
 
-int function(int a, int b, int c, int f, int check);
+int function(float a, float b, float c, int f, int check);
 
 int main()
 {
-    int a, b, c, f, check_char;
+    float a, b, c, f, check_char;
     cout << "Podaj liczby: \na: ";
     cin >> a;
+    if(a == 0){a = 1;}
     cout << "\nb: ";
     cin >> b;
     cout << "\nc: ";
@@ -28,7 +26,7 @@ int main()
     
 }
 
-int function(int a, int b, int c, int f, int check) {
+int function(float a, float b, float c, int f, int check) {
     float x1, x2;
     int delta = (b * b) - 4 * a * c;
     if (delta < 0) {
@@ -36,7 +34,8 @@ int function(int a, int b, int c, int f, int check) {
         return 0;
     }
     else if (delta == 0) {
-        x1 = (b * -1) / 2 * a;
+        cout << a * 2 << " " << b * -1;
+        x1 = (b * -1) / (2 * a);
         cout << "roziwazania rowniania to " << x1;
         return 0;
     }
@@ -127,7 +126,3 @@ int function(int a, int b, int c, int f, int check) {
         }
     }
 }
-
-// Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
-// Debugowanie programu: F5 lub menu Debugowanie > Rozpocznij debugowanie
-
