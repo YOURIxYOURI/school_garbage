@@ -1,4 +1,7 @@
-﻿namespace program
+using System.Net.Http.Headers;
+using System.Reflection.Metadata.Ecma335;
+
+namespace program
 {
     class Mieszkanie 
     {
@@ -45,7 +48,7 @@
             mieszkania = new Mieszkanie[n];
             for (int i = 0; i < n; i++)
             {
-                mieszkania[i].Copy(p.mieszkania[i]);
+                mieszkania[i] = new Mieszkanie(p.mieszkania[i]);
             }
         }
         public void Copy(Pietro p)
@@ -67,7 +70,15 @@
                 tmp += mieszkania[i].ToString();
             }
             return tmp;
-        } 
+        }
+        public double wysokosc_pietra()
+        {
+            double tmp = mieszkania[0].wys;
+            for (uint i = 1; i < n;i++)
+            { if (mieszkania[i].wys > tmp) tmp = mieszkania[i].wys; }
+
+            return tmp;
+        }
     }
     class Klatka
     {
@@ -84,9 +95,10 @@
         {
             numer = Numer;
             n = N;
+            pietra = new Pietro[n];
             for (int i = 0; i < n; i++)
             {
-                pietra[i].Copy(p[i]);
+                pietra[i] = new Pietro(p[i]);
             }
 
         }
@@ -94,9 +106,10 @@
         {
             numer = k.numer;
             n = k.n;
+            pietra = new Pietro[n];
             for (int i = 0; i < n; i++)
             {
-                pietra[i].Copy(k.pietra[i]);
+                pietra[i] = new Pietro(k.pietra[i]);
             }
         }
         public void Copy(Klatka k)
@@ -115,6 +128,12 @@
             {
                 tmp += pietra[i].ToString();
             }
+            return tmp;
+        }
+        public double wysokosc_klatki() 
+        {
+            double tmp = .0;
+            for (uint i =0; i < n;i++) { tmp += pietra[i].wysokosc_pietra(); }
             return tmp;
         }
     }
@@ -139,7 +158,7 @@
             klatki = new Klatka[n];
             for (int i = 0; i < n; i++)
             {
-                klatki[i].Copy(k[i]);
+                klatki[i] = new Klatka(k[i]);
             }
         }
         public Blok(Blok b)
@@ -173,9 +192,32 @@
             }
             return tmp;
         }
+        public double wysokosc_bloku() 
+        {
+            double tmp = 0;
+            for (uint i = 0; i < n; i++) { tmp += klatki[i].wysokosc_klatki(); }
+            return tmp;
+        }
+        public Mieszkanie loft()
+        {
+            Mieszkanie tmp = new Mieszkanie(klatki[0][0][0]);
+            for(uint i = 0; i < n;i++) 
+            {
+                for (uint j = 0; j < klatki[i].n; j++) 
+                {
+                    for (uint x = 0; x < klatki[i][j].n; x++) 
+                    {
+                        if (tmp.wys < klatki[i][j][x].wys)
+                            tmp.Copy(klatki[i][j][x]);
+                    }
+                }
+            }
+            return tmp;
+        }
     }
     class Program
     {
+        
         static void Main(string[] args)
         {
             Mieszkanie[] m = new Mieszkanie[2];
@@ -195,7 +237,13 @@
 
             Blok b = new Blok(1, 1, "prosta", k);
 
-            Console.WriteLine(b);
+            Console.WriteLine(b.ToString());
+
+            Console.WriteLine(b.wysokosc_bloku());
+
+            Console.WriteLine(b.loft().ToString());
+
+
 
         }
     }
