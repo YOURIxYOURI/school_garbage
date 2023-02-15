@@ -23,7 +23,7 @@ class Punkt {
     }
     public double odl(Punkt p)
     {
-        return Math.Sqrt((y - x) * (y - x) + (p.y - p.x) * (p.y - p.x));
+        return Math.Sqrt((p.x - x) * (p.x - x) + (p.y - y) * (p.y - y));
     }
 
     public override string ToString()
@@ -108,6 +108,7 @@ class Wielobok {
     }
     public Wielobok(Punkt[] punkty)
     {
+        this.punkty = new Punkt[punkty.Length];
         for (int i = 0; i < punkty.Length; i++)
         {
             this.punkty[i] = new Punkt(punkty[i].x,punkty[i].y);
@@ -130,9 +131,14 @@ class Wielobok {
     {
         double obw = .0;
 
-        for (int i = 1; i < punkty.Length; i++)
+        for (int i = 0; i < punkty.Length; i++)
         {
-            obw += punkty[i - 1].odl(punkty[i]);
+            if (i == punkty.Length-1)
+            {
+                obw += punkty[i].odl(punkty[0]);
+            }
+            else
+                obw += punkty[i].odl(punkty[i+1]);
         }
             
         return obw;
@@ -143,40 +149,49 @@ public class program
 {
     static void Main()
     {
-        Punkt p1 = new Punkt(0, 0);
-        Punkt p2 = new Punkt(1, 2);
+        Punkt p1 = new Punkt(1,2);
+        Punkt p2 = new Punkt(2, 2);
+        Punkt p3 = new Punkt(2, 1);
+        Punkt p4 = new Punkt(1, 1);
+
+        Punkt[] punkty = { p1, p2, p3, p4 };
+
+        Wielobok w = new Wielobok(punkty);
+        Console.WriteLine(w.obw());
 
 
 
-        Punkt p3 = p1 + p2;
-        
+        //Punkt p3 = p1 + p2;
 
 
 
-        p3 *= 3.3;
-        Punkt p4 = -p2;
-        Console.WriteLine("{0}\n{1}\n{2}\n{3}", p1, p2, p3, p4);
+
+        //p3 *= 3.3;
+        //Punkt p4 = -p2;
+        //Console.WriteLine("{0}\n{1}\n{2}\n{3}", p1, p2, p3, p4);
 
 
-        Console.WriteLine("{0}", p3);
-        if (p1 == p2)
-            Console.WriteLine("równe");
-        else
-            Console.WriteLine("nie równe");
-
-
-
-        if (p4 == p2)
-            Console.WriteLine("równe");
-        else
-            Console.WriteLine("nie równe");
+        //Console.WriteLine("{0}", p3);
+        //if (p1 == p2)
+        //    Console.WriteLine("równe");
+        //else
+        //    Console.WriteLine("nie równe");
 
 
 
-        if (p3 == p2)
-            Console.WriteLine("równe");
-        else
-            Console.WriteLine("nie równe");
-        Console.ReadKey();
+        //if (p4 == p2)
+        //    Console.WriteLine("równe");
+        //else
+        //    Console.WriteLine("nie równe");
+
+
+
+        //if (p3 == p2)
+        //    Console.WriteLine("równe");
+        //else
+        //    Console.WriteLine("nie równe");
+        //Console.ReadKey();
+
+
     }
 }
