@@ -92,48 +92,56 @@ class Punkt {
 }
 
 class Wielobok {
-    
 
-    Punkt[] punkty;
 
-    public Punkt this[uint i]
+    List<Punkt> punkty = new List<Punkt>();
+
+    public Wielobok()
     {
-        get { return punkty[i]; }
-        set { punkty[i] = value; }
-    }
 
-    public Wielobok() 
-    {
-        punkty = Array.Empty<Punkt>();
     }
     public Wielobok(Punkt[] punkty)
     {
-        this.punkty = new Punkt[punkty.Length];
         for (int i = 0; i < punkty.Length; i++)
         {
-            this.punkty[i] = new Punkt(punkty[i].x,punkty[i].y);
+            this.punkty.Add(new Punkt(punkty[i].x, punkty[i].y));
         }
     }
     public Wielobok(Wielobok w)
     {
-        for (int i = 0; i < w.punkty.Length; i++)
+        for (int i = 0; i < w.punkty.Count; i++)
         {
-            this.punkty[i] = new Punkt(w.punkty[i].x, w.punkty[i].y);
+            this.punkty.Add(new Punkt(w.punkty[i].x, w.punkty[i].y));
         }
     }
 
-    public Wielobok(uint i)
+    public Wielobok(List<Punkt> punkty)
     {
-        punkty = new Punkt[i];
+        this.punkty.AddRange(punkty);
     }
-
+    public void dodaj(double x, double y)
+    {
+        punkty.Add(new Punkt(x, y));
+    }
+    public void dodaj(Punkt p)
+    {
+        punkty.Add(p);
+    }
+    public void usun(int i)
+    {
+        punkty.RemoveAt(i);
+    }
+    public void usun()
+    {
+        punkty.Clear();
+    }
     public double obw()
     {
         double obw = .0;
 
-        for (int i = 0; i < punkty.Length; i++)
+        for (int i = 0; i < punkty.Count; i++)
         {
-            if (i == punkty.Length-1)
+            if (i == punkty.Count-1)
             {
                 obw += punkty[i].odl(punkty[0]);
             }
@@ -142,6 +150,16 @@ class Wielobok {
         }
             
         return obw;
+    }
+    public override string ToString()
+    {
+        string tmp = "";
+        for (int i = 0; i < punkty.Count; i++) 
+        {
+            tmp += $"[{punkty[i].x} {punkty[i].y}]";
+        }
+        tmp += "\n";
+        return tmp;
     }
 }
 
@@ -158,39 +176,26 @@ public class program
 
         Wielobok w = new Wielobok(punkty);
         Console.WriteLine(w.obw());
+        Console.WriteLine(w.ToString());
+        p3 = p1 + p2;
+        p3 *= 3.3;
+        p4 = -p2;
+        Console.WriteLine("{0}\n{1}\n{2}\n{3}", p1, p2, p3, p4);
+        if (p1 == p2)
+            Console.WriteLine("równe");
+        else
+            Console.WriteLine("nie równe");
 
+        if (p4 == p2)
+            Console.WriteLine("równe");
+        else
+            Console.WriteLine("nie równe");
 
-
-        //Punkt p3 = p1 + p2;
-
-
-
-
-        //p3 *= 3.3;
-        //Punkt p4 = -p2;
-        //Console.WriteLine("{0}\n{1}\n{2}\n{3}", p1, p2, p3, p4);
-
-
-        //Console.WriteLine("{0}", p3);
-        //if (p1 == p2)
-        //    Console.WriteLine("równe");
-        //else
-        //    Console.WriteLine("nie równe");
-
-
-
-        //if (p4 == p2)
-        //    Console.WriteLine("równe");
-        //else
-        //    Console.WriteLine("nie równe");
-
-
-
-        //if (p3 == p2)
-        //    Console.WriteLine("równe");
-        //else
-        //    Console.WriteLine("nie równe");
-        //Console.ReadKey();
+        if (p3 == p2)
+            Console.WriteLine("równe");
+        else
+            Console.WriteLine("nie równe");
+        Console.ReadKey();
 
 
     }
