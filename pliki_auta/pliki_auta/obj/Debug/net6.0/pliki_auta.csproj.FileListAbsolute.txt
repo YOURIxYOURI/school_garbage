@@ -1,0 +1,15 @@
+C:\Users\admin\Desktop\qwerty\pliki_auta\pliki_auta\bin\Debug\net6.0\pliki_auta.exe
+C:\Users\admin\Desktop\qwerty\pliki_auta\pliki_auta\bin\Debug\net6.0\pliki_auta.deps.json
+C:\Users\admin\Desktop\qwerty\pliki_auta\pliki_auta\bin\Debug\net6.0\pliki_auta.runtimeconfig.json
+C:\Users\admin\Desktop\qwerty\pliki_auta\pliki_auta\bin\Debug\net6.0\pliki_auta.dll
+C:\Users\admin\Desktop\qwerty\pliki_auta\pliki_auta\bin\Debug\net6.0\pliki_auta.pdb
+C:\Users\admin\Desktop\qwerty\pliki_auta\pliki_auta\obj\Debug\net6.0\pliki_auta.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\qwerty\pliki_auta\pliki_auta\obj\Debug\net6.0\pliki_auta.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\qwerty\pliki_auta\pliki_auta\obj\Debug\net6.0\pliki_auta.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\qwerty\pliki_auta\pliki_auta\obj\Debug\net6.0\pliki_auta.AssemblyInfo.cs
+C:\Users\admin\Desktop\qwerty\pliki_auta\pliki_auta\obj\Debug\net6.0\pliki_auta.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\qwerty\pliki_auta\pliki_auta\obj\Debug\net6.0\pliki_auta.dll
+C:\Users\admin\Desktop\qwerty\pliki_auta\pliki_auta\obj\Debug\net6.0\refint\pliki_auta.dll
+C:\Users\admin\Desktop\qwerty\pliki_auta\pliki_auta\obj\Debug\net6.0\pliki_auta.pdb
+C:\Users\admin\Desktop\qwerty\pliki_auta\pliki_auta\obj\Debug\net6.0\pliki_auta.genruntimeconfig.cache
+C:\Users\admin\Desktop\qwerty\pliki_auta\pliki_auta\obj\Debug\net6.0\ref\pliki_auta.dll
