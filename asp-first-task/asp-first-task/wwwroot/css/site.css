@@ -1,0 +1,43 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.navbar {
+    background-color: rgb(250,250,250);
+    color: black;
+    height: 300px;
+}
+
+h1, h4 {
+    margin-right: 40px;
+}
+
+.footer {
+    background-color: rgb(250,250,250);
+    color: black;
+    height: 300px;
+}
+
+.main-container {
+    background-color:white;
+    color:black;
+    width:80%;
+    justify-content: center;
+    justify-items:center;
+    text-align: center;
+}

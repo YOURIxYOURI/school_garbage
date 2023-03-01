@@ -1,0 +1,30 @@
+﻿@page
+@model asp_first_task.Pages.KontaktModel
+@{
+    ViewData["Title"] = "Kontakt";
+    ViewData["autor"] = Model.Configuration["autor"];
+    ViewData["tryb"] = Model.Configuration["TrybSerwera"];
+}
+
+@{
+    if (Model.IsPost)
+    {
+        string fname = Request.Form["name"];
+        string text = Request.Form["text"];
+
+        <div>
+            <p>Dziękujemy za wiadomość Pan/Pani @fname o treści @text tak nie przeczytamy tej wiadomości, ale dziękujemy.</p>
+        </div>
+    }
+    else
+    {
+        <div>
+            <h1>Kontakt</h1>
+            <form method="post">
+                <p>Imie: <input type="text" name="name"></input></p>
+                <p>Treść <input type="text" name="text"></input></p>
+                <button class="btn btn-primary" type="submit">Wyslij</button>
+            </form>
+        </div>
+    }
+}
