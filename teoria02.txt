@@ -16,5 +16,5 @@
 
 3.
 Tworzenie własnych kontrolek możemy przeprowadzić na dwa sposoby:
- -User control - zbiór predefiniwanych kontrolek w celu tworzenia widoków/stron
- -Custom control - tworzenie włąsnej kontrolki razem z wyglądem kontrolki
+ -User control - zbiór predefiniwanych(w tym stworzone przez użtkownika w Custom control) kontrolek w celu tworzenia widoków/stron
+ -Custom control - tworzenie włąsnej kontrolki razem z jej wyglądem np. przycisk domyślnie czerwony i z napisem"jestem czerwony"  
