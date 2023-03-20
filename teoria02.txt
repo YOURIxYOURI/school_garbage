@@ -27,7 +27,7 @@
 -Typ User Information - typ ten służy do prezentowania informacji dla uzytkownika w sposób tekstowy i graficzny. Najczęściej użytkownik nie ma możłiwosci wejść w bezpośrednią interakcje z kontrolką Wyrózniamy nastepujące kontrolki:
 	-Label
 	-Popup
-	-AcesText
+	-AccesText
 	-StatusBar
 	-ProgressBar
 -Typ Input - Typ ten służy do wprowadzania danych przez użytkownik obok kontrolek buttons najbardziej podstawowe kontrolki w interfejsie użytkownika. Wyróżnamy nastepujące kontrolki:
