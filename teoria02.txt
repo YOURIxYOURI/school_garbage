@@ -13,8 +13,28 @@
 	w której się znajdują, pozostałe elementy zostaną zawinięte w tej samej kolejności.
 
 2.
-
+-Typ Layout - służy do definowania wielkośći, pozycji, ustawienia elementów pochodnych, Kontrolki które wyróżniamy:
+	-Grid
+	-StackPanel
+	-Window
+	-Dockpanel
+	-WrapPanel
+	-Canvas
+	-Panel
+-Typ Buttons - najbardziej podstawowy typ kontrolek w interfejsie użytkownika służy on do kontroli eventów poprzez klikniecie, przytrzymanie itp. Wyróżniamy 	nastepujące kontrolki:
+	-Button
+	-RepetButton
+-Typ User Information - typ ten służy do prezentowania informacji dla uzytkownika w sposób tekstowy i graficzny. Najczęściej użytkownik nie ma możłiwosci wejść w bezpośrednią interakcje z kontrolką Wyrózniamy nastepujące kontrolki:
+	-Label
+	-Popup
+	-AcesText
+	-StatusBar
+	-ProgressBar
+-Typ Input - Typ ten służy do wprowadzania danych przez użytkownik obok kontrolek buttons najbardziej podstawowe kontrolki w interfejsie użytkownika. Wyróżnamy nastepujące kontrolki:
+	-TextBox
+	-PasswordBox
+	-RichTextBox
 3.
-Tworzenie własnych kontrolek możemy przeprowadzić na dwa sposoby:
- -User control - zbiór predefiniwanych(w tym stworzone przez użtkownika w Custom control) kontrolek w celu tworzenia widoków/stron
+Tworzenie własnych kontrolek możemy przeprowadzić z użyciem dwóch różnych plików:
+ -User control - zbiór predefiniwanych(w tym stworzone przez użtkownika w Custom control) kontrolek w celu tworzenia widoków/Całych okien;
  -Custom control - tworzenie włąsnej kontrolki razem z jej wyglądem np. przycisk domyślnie czerwony i z napisem"jestem czerwony"  
