@@ -6,16 +6,29 @@
  - wywołanie obiktu z gotową kwerendą możemy wykonać za pomocą metody ExecuteNonQuery/ExecuteQuery lub obiektu MysqlReader
  -zamykamy połączeni z baza używająć metody close na obiekcie połączenia
  
+Przykład użycia:
+Using Myslq.Data
+
+MysqlConnection con = new();
+con.ConnectionString = "server=localhsot;uid=root;pwd=;database=nazwa;";
+con.Open()
+
+
+String sql //kwerenda
+
+MyslqCommand cmd = new(con, sql) 
+Cmd.ExecuteNonQuery()
+con.Close()
+
 2.
- Wyrażenia regularne słuszą do tworzenia wzorców które pozwalają na przeszukiwanie danych tekstowych i zwracaniu dopasowań na podstawie wzorca, Przykład wzorca z jezyka
- C#/.NET:
-  ^[0-9A-Z]([-.\w]*[0-9A-Z])*$
-  służy on do weryfikowania aliasów ardresu email.
+ Wyrażenia regularne słuszą do tworzenia wzorców które pozwalają na przeszukiwanie danych tekstowych i zwracaniu dopasowań na podstawie wzorca, Przykłady wzorca z jezyka
+ C#/.Net poniżej wraz z zadaniem 3:
+  
   
 3.1
  ^(?=.*\d)(?=.*[a-zA-Z].+$)
 3.2
- 
+ ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
 3.3
  ^[A-Z][a-z]*(\s+[A-Z][a-z]*)*$
 3.4
