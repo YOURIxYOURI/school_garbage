@@ -25,11 +25,10 @@ con.Close()
  C#/.Net poniżej wraz z zadaniem 3:
   
   
-3.1
- ^(?=.*\d)(?=.*[a-zA-Z].+$)
-3.2
- ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
-3.3
- ^[A-Z][a-z]*(\s+[A-Z][a-z]*)*$
-3.4
- ^\d{2}\.\d{2}\.\d{4}T\d{2}:\d{2}:\d{2}$
+3.1 sprawdzenie czy tekst zawiera jedna przynajmiej jedna cyfrę i literę 
+ ^(?=.*[a-zA-Z])(?=.*\d).+$
+3.2 sprawdzenie poprawności formy adresu email ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+3.3 sprawdzenie czy każde słowo w tekście zaczyna się dużą litera
+ ^(?:[A-Z][a-z]*\s?)+$
+3.4 sprawdzenie poprawności konkretnego formatu daty 
+ `^\d{2}\.\d{2}\.\d{4}T\d{2}:\d{2}:\d{2}$`
