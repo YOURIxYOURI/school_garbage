@@ -6,10 +6,16 @@
  - wywołanie obiktu z gotową kwerendą możemy wykonać za pomocą metody ExecuteNonQuery/ExecuteQuery lub obiektu MysqlReader
  -zamykamy połączeni z baza używająć metody close na obiekcie połączenia
  
- 2.
+2.
  Wyrażenia regularne słuszą do tworzenia wzorców które pozwalają na przeszukiwanie danych tekstowych i zwracaniu dopasowań na podstawie wzorca, Przykład wzorca z jezyka
  C#/.NET:
   ^[0-9A-Z]([-.\w]*[0-9A-Z])*$
   służy on do weryfikowania aliasów ardresu email.
   
+3.1
+ ^(?=.*\d)(?=.*[a-zA-Z].+$)
+3.2
  
+3.3
+ ^[A-Z][a-z]*(\s+[A-Z][a-z]*)*$
+3.4
