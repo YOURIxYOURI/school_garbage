@@ -1,0 +1,15 @@
+C:\Users\admin\Desktop\Bartosz ujma\abstrakcja_to_moje_życie\abstrakcja_to_moje_życie\obj\Debug\net6.0\abstrakcja_to_moje_życie.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\Bartosz ujma\abstrakcja_to_moje_życie\abstrakcja_to_moje_życie\obj\Debug\net6.0\abstrakcja_to_moje_życie.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\Bartosz ujma\abstrakcja_to_moje_życie\abstrakcja_to_moje_życie\obj\Debug\net6.0\abstrakcja_to_moje_życie.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\Bartosz ujma\abstrakcja_to_moje_życie\abstrakcja_to_moje_życie\obj\Debug\net6.0\abstrakcja_to_moje_życie.AssemblyInfo.cs
+C:\Users\admin\Desktop\Bartosz ujma\abstrakcja_to_moje_życie\abstrakcja_to_moje_życie\obj\Debug\net6.0\abstrakcja_to_moje_życie.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\Bartosz ujma\abstrakcja_to_moje_życie\abstrakcja_to_moje_życie\bin\Debug\net6.0\abstrakcja_to_moje_życie.exe
+C:\Users\admin\Desktop\Bartosz ujma\abstrakcja_to_moje_życie\abstrakcja_to_moje_życie\bin\Debug\net6.0\abstrakcja_to_moje_życie.deps.json
+C:\Users\admin\Desktop\Bartosz ujma\abstrakcja_to_moje_życie\abstrakcja_to_moje_życie\bin\Debug\net6.0\abstrakcja_to_moje_życie.runtimeconfig.json
+C:\Users\admin\Desktop\Bartosz ujma\abstrakcja_to_moje_życie\abstrakcja_to_moje_życie\bin\Debug\net6.0\abstrakcja_to_moje_życie.dll
+C:\Users\admin\Desktop\Bartosz ujma\abstrakcja_to_moje_życie\abstrakcja_to_moje_życie\bin\Debug\net6.0\abstrakcja_to_moje_życie.pdb
+C:\Users\admin\Desktop\Bartosz ujma\abstrakcja_to_moje_życie\abstrakcja_to_moje_życie\obj\Debug\net6.0\abstrakcja_to_moje_życie.dll
+C:\Users\admin\Desktop\Bartosz ujma\abstrakcja_to_moje_życie\abstrakcja_to_moje_życie\obj\Debug\net6.0\refint\abstrakcja_to_moje_życie.dll
+C:\Users\admin\Desktop\Bartosz ujma\abstrakcja_to_moje_życie\abstrakcja_to_moje_życie\obj\Debug\net6.0\abstrakcja_to_moje_życie.pdb
+C:\Users\admin\Desktop\Bartosz ujma\abstrakcja_to_moje_życie\abstrakcja_to_moje_życie\obj\Debug\net6.0\abstrakcja_to_moje_życie.genruntimeconfig.cache
+C:\Users\admin\Desktop\Bartosz ujma\abstrakcja_to_moje_życie\abstrakcja_to_moje_życie\obj\Debug\net6.0\ref\abstrakcja_to_moje_życie.dll
