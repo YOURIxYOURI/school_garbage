@@ -1,0 +1,26 @@
+﻿@page
+@model asp_login.Pages.loginModel
+@{
+    ViewData["Title"] = "Zaloguj";
+}
+
+<div class="d-flex" style="width: 100%">
+    <div class="p-2" style="width: 50%">
+        <h1>Login</h1>
+        <form method="post" >
+            <p>Nazwa: <input class="form-control" type="text" name="log_name"></input></p>
+            <p>hasło: <input class="form-control" type="text" name="log_pass"></input></p>
+            <p><button style="width:20%; text-align:center;" class="btn btn-primary" type="Submit" name="button" value="log">Wyślij</button></p>
+        </form>
+    </div>
+    <div class="p-2" style="width: 50%">
+        <h1>Register</h1>
+        <form method="post">
+            <p>Nazwa: <input class="form-control" type="text" name="reg_name"></input></p>
+            <p>hasło: <input class="form-control" type="text" name="reg_pass"></input></p>
+            <p>Powtóz hasło: <input type="text" class="form-control"name="reg_pass_again"></input></p>
+            <p><button style="width:20%;  text-align:center;" class="btn btn-primary" type="Submit" name="button" value="reg">Wyślij</button></p>
+        </form>
+    </div>
+    <h3>@Model.info</h3>
+</div>

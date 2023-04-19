@@ -1,0 +1,28 @@
+﻿@page
+@model first_asp.Pages.KontaktModel
+@{
+    ViewData["Title"] = "Kontakt";
+}
+
+@{
+    if (Model.IsPost)
+    {
+        string fname = Request.Form["fname"];
+        string lname = Request.Form["lname"];
+    }
+    else
+    {
+    <div>
+                <h1>Kontakt</h1>
+                <form method="post">
+                    <p>Imie: <input type="text" name="fname"></input></p>
+                    <p>Nazwisko: <input type="text" name="lname"></input></p>
+                    <button class="btn btn-primary" type="submit">Wyslij</button>
+                </form>
+    </div>
+    }
+}
+
+@section stopka{
+    <p>tu jest stopka</p>
+}

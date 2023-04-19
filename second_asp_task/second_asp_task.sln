@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "second_asp_task", "second_asp_task\second_asp_task.csproj", "{EA4BBF24-4009-44C5-879C-30DEFC5C5EEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA4BBF24-4009-44C5-879C-30DEFC5C5EEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA4BBF24-4009-44C5-879C-30DEFC5C5EEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA4BBF24-4009-44C5-879C-30DEFC5C5EEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA4BBF24-4009-44C5-879C-30DEFC5C5EEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AFEDAC70-8459-46CB-A155-FCD852BF399A}
+	EndGlobalSection
+EndGlobal

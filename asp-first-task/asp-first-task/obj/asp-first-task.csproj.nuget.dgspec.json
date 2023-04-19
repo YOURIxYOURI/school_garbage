@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\Desktop\\Bartosz ujma\\asp-first-task\\asp-first-task\\asp-first-task.csproj": {}
+    "C:\\Users\\admin\\Desktop\\Bartosz ujma\\school_garbage\\asp-first-task\\asp-first-task\\asp-first-task.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\Desktop\\Bartosz ujma\\asp-first-task\\asp-first-task\\asp-first-task.csproj": {
+    "C:\\Users\\admin\\Desktop\\Bartosz ujma\\school_garbage\\asp-first-task\\asp-first-task\\asp-first-task.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\Bartosz ujma\\asp-first-task\\asp-first-task\\asp-first-task.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\Bartosz ujma\\school_garbage\\asp-first-task\\asp-first-task\\asp-first-task.csproj",
         "projectName": "asp-first-task",
-        "projectPath": "C:\\Users\\admin\\Desktop\\Bartosz ujma\\asp-first-task\\asp-first-task\\asp-first-task.csproj",
+        "projectPath": "C:\\Users\\admin\\Desktop\\Bartosz ujma\\school_garbage\\asp-first-task\\asp-first-task\\asp-first-task.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Desktop\\Bartosz ujma\\asp-first-task\\asp-first-task\\obj\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\Bartosz ujma\\school_garbage\\asp-first-task\\asp-first-task\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

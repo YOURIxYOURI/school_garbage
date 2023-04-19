@@ -1,0 +1,38 @@
+﻿@page
+@model first_asp.Pages.users_dbModel
+@{
+    ViewData["Title"] = "baza";
+
+    <table>
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.users[0].id)</th>
+                <th>@Html.DisplayNameFor(model => model.users[0].firstname)</th>
+                <th>@Html.DisplayNameFor(model => model.users[0].email)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model.users)
+            {
+                Dictionary<string, string> dane = new Dictionary<string, string> {
+        {
+        "Dane",
+        JsonConvert.SerializeObject(user)
+        }
+        };
+                <tr>
+                    <td>@Html.DisplayFor(model => user.id)</td>
+                    <td>@Html.DisplayFor(model => user.firstname)</td>
+                    <td>@Html.DisplayFor(model => user.email)</td>
+                    <td><a asp-page="./user" asp-all-route-data="dane">Szczegóły</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <form method="post">
+        <p>imie <input type="text" name="firstname"></input></p>
+        <p>email <input type="text" name="email"></input></p>
+        <p>opis <input type="text" name="description"></input></p>
+        <button type="submit">Wyślij</button>
+    </form>
+}

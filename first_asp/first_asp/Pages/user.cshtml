@@ -1,0 +1,9 @@
+﻿@page
+@model first_asp.Pages.userModel
+@{
+    ViewData["Title"] = "Dane o " + @Html.DisplayFor(model => model.user.name);
+    
+    <h1>@Html.DisplayFor(model => model.user.name)</h1>
+    <p>@Html.DisplayFor(model => model.user.email)</p>
+    <p>@Html.DisplayFor(model => model.user.description)</p>
+}

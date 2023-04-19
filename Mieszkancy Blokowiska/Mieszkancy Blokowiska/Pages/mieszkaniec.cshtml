@@ -1,0 +1,15 @@
+﻿@page
+@model Mieszkancy_Blokowiska.Pages.mieszkaniecModel
+@{
+    ViewData["Title"] = $"Dane o {Model.m.imie} {Model.m.nazwisko}";
+
+    <h1>@Html.DisplayFor(model => model.m.imie) @Html.DisplayFor(model => model.m.nazwisko)</h1>
+    <p>Płeć: @Html.DisplayFor(model => model.m.plec)</p>
+    if(Model.m.wlasciciel){
+        <p>Mieszka pod numemerem @Html.DisplayFor(model => model.m.nr_mieszkania) i JEST właścicielem mieskania</p>
+    }
+    else{
+        <p>Mieszka pod numemerem @Html.DisplayFor(model => model.m.nr_mieszkania) i NIE JEST właścicielem mieskania</p>
+    }
+    <p>ID mieszkańca: @Html.DisplayFor(model => model.m.id_mieszkaniec)</p>
+}

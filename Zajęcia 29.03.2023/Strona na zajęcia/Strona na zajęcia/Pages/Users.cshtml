@@ -1,0 +1,40 @@
+﻿@page
+@model Strona_na_zajęcia.Pages.UsersModel
+@{
+    ViewData["Title"] = "Użytkownicy";
+}
+
+<table>
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.users[0].Id)</th>
+            <th>@Html.DisplayNameFor(model => model.users[0].Name)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var user in Model.users)
+        {
+            Dictionary<string, string> osoba = new Dictionary<string, string>
+            {
+                {
+                    "dane",
+                    JsonConvert.SerializeObject(user)
+                }
+            };
+            <tr>
+                <td>@Html.DisplayFor(model => user.Id)</td>
+                <td>@Html.DisplayFor(model => user.Name)</td>
+                <td>
+                    <a asp-page="./User" asp-all-route-data="osoba">Szczegóły</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<form method="post">
+    Imię: <input type="text" name="imie" /><br />
+    Email: <input type="email" name="email" /><br />
+    Opis: <input type="text" name="opis" /><br />
+    <button type="submit">Prześlij</button>
+</form>

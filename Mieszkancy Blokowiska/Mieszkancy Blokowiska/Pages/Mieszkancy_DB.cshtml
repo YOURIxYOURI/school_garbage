@@ -1,0 +1,30 @@
+﻿@page
+@model Mieszkancy_Blokowiska.Pages.Mieszkancy_DBModel
+@{
+    ViewData["title"] = "Mieszkancy_DB";
+
+    <table>
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.mkyDB[0].imie)</th>
+                    <th>@Html.DisplayNameFor(model => model.mkyDB[0].nazwisko)</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var m in Model.mkyDB)
+            {
+                Dictionary<string, string> dane = new Dictionary<string, string> {
+        {
+        "Dane",
+        JsonConvert.SerializeObject(m)
+        }
+        };
+                    <tr>
+                        <td>@Html.DisplayFor(model => m.imie)</td>
+                        <td>@Html.DisplayFor(model => m.nazwisko)</td>
+                        <td><a asp-page="./mieszkaniec" asp-all-route-data="dane">Szczegóły</a></td>
+                    </tr>
+            }
+            </tbody>
+        </table>
+}

@@ -1,0 +1,10 @@
+﻿@page
+@model Strona_na_zajęcia.Pages.UserModel
+@{
+    ViewData["Title"] = "Dane o " + Model.user.Name;
+}
+
+<h1>Imię: @Html.DisplayFor(model => Model.user.Name)</h1>
+<p>Email: @Html.DisplayFor(model => Model.user.Email)</p>
+<p>Opis: @Html.DisplayFor(model => Model.user.Description)</p>
+<p>ID użytkownika: @Html.DisplayFor(model => Model.user.Id)</p>

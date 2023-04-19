@@ -1,0 +1,56 @@
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\appsettings.json
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\Strona na zajęcia.staticwebassets.runtime.json
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\Strona na zajęcia.exe
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\Strona na zajęcia.deps.json
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\Strona na zajęcia.runtimeconfig.json
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\Strona na zajęcia.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\Strona na zajęcia.pdb
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\Strona na zajęcia.csproj.AssemblyReference.cache
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\Strona na zajęcia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\Strona na zajęcia.AssemblyInfoInputs.cache
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\Strona na zajęcia.AssemblyInfo.cs
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\Strona na zajęcia.csproj.CoreCompileInputs.cache
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\Strona na zajęcia.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\Strona na zajęcia.RazorAssemblyInfo.cache
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\Strona na zajęcia.RazorAssemblyInfo.cs
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\staticwebassets\msbuild.Strona na zajęcia.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\staticwebassets\msbuild.build.Strona na zajęcia.props
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Strona na zajęcia.props
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Strona na zajęcia.props
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\scopedcss\bundle\Strona na zajęcia.styles.css
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\scopedcss\projectbundle\Strona na zajęcia.bundle.scp.css
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\Strona na zajęcia.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\refint\Strona na zajęcia.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\Strona na zajęcia.pdb
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\Strona na zajęcia.genruntimeconfig.cache
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\ref\Strona na zajęcia.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\obj\Debug\net6.0\Strona na zajęcia.csproj.CopyComplete
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\Google.Protobuf.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\K4os.Compression.LZ4.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\K4os.Hash.xxHash.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\MySql.Data.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\ZstdNet.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\comerr64.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\gssapi64.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\k5sprt64.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\krb5_64.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\krbcc64.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\krzys\source\repos\Strona na zajęcia\Strona na zajęcia\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
