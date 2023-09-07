@@ -122,6 +122,19 @@ else:
 print('dziekuje za gre, zagraj jeszcze raz kiedys')
 
 #to jest kólko i krzyzyk PvE 
+'''
+char[] board = {'1','2','3','4','5','6','7','8','9'};
+        void display_board(){
+            Console.WriteLine("+-------+-------+-------+\n|       |       |       |\n"+
+            "|   "+board[0]+"   |   "+board[1]+"   |   "+board[2]+"   |\n"+
+            "|       |       |       |\n"+"+-------+-------+-------+\n|       |       |       |\n"+
+            "|   "+board[3]+"   |   "+board[4]+"   |   "+board[5]+"   |\n"+
+            "|       |       |       |\n"+"+-------+-------+-------+\n|       |       |       |\n"+
+            "|   "+board[7]+"   |   "+board[7]+"   |   "+board[8]+"   |\n"+
+            "|       |       |       |\n" +"+-------+-------+-------+");
+        }
+        display_board();
+'''
     
     
 
