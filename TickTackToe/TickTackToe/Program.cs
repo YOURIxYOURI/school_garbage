@@ -11,8 +11,8 @@ class Program
     {
         Console.WriteLine("Witaj w \"Tic Tac Toe\". Oto wygląd planszy:");
         DisplayBoard();
-
-        for (int moves = 1; moves <= 9; moves++)
+        int moves;
+        for (moves = 1; moves < 9; moves++)
         {
             if (moves % 2 != 0)
             {
@@ -27,8 +27,7 @@ class Program
             }
             else
             {
-                DrawMove();
-                if (VictoryFor(computer))
+                if (DrawMove())
                 {
                     Console.Clear();
                     DisplayBoard();
@@ -38,12 +37,9 @@ class Program
             }
             Console.Clear();
             DisplayBoard();
-
-            if (moves == 9)
-                Console.WriteLine("REMIS");
-
         }
-
+        if(moves == 9)
+        Console.WriteLine("REMIS");
         Console.WriteLine("Dziękujemy za grę! Zagraj jeszcze raz kiedyś.");
     }
 
@@ -83,8 +79,38 @@ class Program
         }
     }
 
-    static void DrawMove()
+    static bool DrawMove()
     {
+        for (int i = 0; i < 9; i++)
+        {
+            if (board[i] != computer && board[i] != player)
+            {
+                char prev = board[i];
+                board[i] = computer;
+                if (VictoryFor(computer))
+                {
+                    return true;
+                }
+                board[i] = prev;
+            }
+        }
+
+        for (int i = 0; i < 9; i++)
+        {
+            if (board[i] != computer && board[i] != player)
+            {
+                char prev = board[i];
+                board[i] = player;
+                if (VictoryFor(player))
+                {
+                    board[i] = computer;
+                    return false;
+                }
+                board[i] = prev;
+            }
+        }
+
+
         List<int> freeFields = new List<int>();
         for (int i = 0; i < board.Length; i++)
         {
@@ -97,6 +123,7 @@ class Program
         Random random = new Random();
         int index = random.Next(freeFields.Count);
         board[freeFields[index]] = computer;
+        return false;
     }
 
     static bool VictoryFor(char sign)
