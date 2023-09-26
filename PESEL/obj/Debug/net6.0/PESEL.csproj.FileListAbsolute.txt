@@ -1,0 +1,14 @@
+C:\Users\student\source\repos\BU\PESEL\bin\Debug\net6.0\PESEL.exe
+C:\Users\student\source\repos\BU\PESEL\bin\Debug\net6.0\PESEL.deps.json
+C:\Users\student\source\repos\BU\PESEL\bin\Debug\net6.0\PESEL.runtimeconfig.json
+C:\Users\student\source\repos\BU\PESEL\bin\Debug\net6.0\PESEL.dll
+C:\Users\student\source\repos\BU\PESEL\bin\Debug\net6.0\PESEL.pdb
+C:\Users\student\source\repos\BU\PESEL\obj\Debug\net6.0\PESEL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\student\source\repos\BU\PESEL\obj\Debug\net6.0\PESEL.AssemblyInfoInputs.cache
+C:\Users\student\source\repos\BU\PESEL\obj\Debug\net6.0\PESEL.AssemblyInfo.cs
+C:\Users\student\source\repos\BU\PESEL\obj\Debug\net6.0\PESEL.csproj.CoreCompileInputs.cache
+C:\Users\student\source\repos\BU\PESEL\obj\Debug\net6.0\PESEL.dll
+C:\Users\student\source\repos\BU\PESEL\obj\Debug\net6.0\refint\PESEL.dll
+C:\Users\student\source\repos\BU\PESEL\obj\Debug\net6.0\PESEL.pdb
+C:\Users\student\source\repos\BU\PESEL\obj\Debug\net6.0\PESEL.genruntimeconfig.cache
+C:\Users\student\source\repos\BU\PESEL\obj\Debug\net6.0\ref\PESEL.dll
