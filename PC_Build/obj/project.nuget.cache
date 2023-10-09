@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Nm2RPUeZiQTGqatGHbSxdLwsOYTZbPDLO8V1WV0Q/K36lsW5iaOHP8WmIKznluAXYKczlNiGstrBB5qC0IPxiQ==",
+  "success": true,
+  "projectFilePath": "D:\\projects\\PC_Build\\PC_Build.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\barte\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

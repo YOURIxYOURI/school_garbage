@@ -1,0 +1,17 @@
+D:\projects\PC_Build\bin\Debug\net6.0\PC_Build.exe
+D:\projects\PC_Build\bin\Debug\net6.0\PC_Build.deps.json
+D:\projects\PC_Build\bin\Debug\net6.0\PC_Build.runtimeconfig.json
+D:\projects\PC_Build\bin\Debug\net6.0\PC_Build.dll
+D:\projects\PC_Build\bin\Debug\net6.0\PC_Build.pdb
+D:\projects\PC_Build\obj\Debug\net6.0\PC_Build.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\PC_Build\obj\Debug\net6.0\PC_Build.AssemblyInfoInputs.cache
+D:\projects\PC_Build\obj\Debug\net6.0\PC_Build.AssemblyInfo.cs
+D:\projects\PC_Build\obj\Debug\net6.0\PC_Build.csproj.CoreCompileInputs.cache
+D:\projects\PC_Build\obj\Debug\net6.0\PC_Build.dll
+D:\projects\PC_Build\obj\Debug\net6.0\refint\PC_Build.dll
+D:\projects\PC_Build\obj\Debug\net6.0\PC_Build.pdb
+D:\projects\PC_Build\obj\Debug\net6.0\PC_Build.genruntimeconfig.cache
+D:\projects\PC_Build\obj\Debug\net6.0\ref\PC_Build.dll
+D:\projects\PC_Build\bin\Debug\net6.0\CsvHelper.dll
+D:\projects\PC_Build\obj\Debug\net6.0\PC_Build.csproj.AssemblyReference.cache
+D:\projects\PC_Build\obj\Debug\net6.0\PC_Build.csproj.CopyComplete
