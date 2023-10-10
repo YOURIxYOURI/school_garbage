@@ -1,6 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Formats.Asn1;
 using System.Globalization;
 using System.IO;
 using CsvHelper;
@@ -9,11 +10,12 @@ using PC_Build;
 
 static void program()
 {
-   try { 
+    try
+    {
         while (true)
         {
             Console.WriteLine("Menu:");
-            Console.WriteLine("1. Dodaj komponent sieciowy");
+            Console.WriteLine("1. Dodaj komponent");
             Console.WriteLine("2. Wybierz zestaw komputerowy");
             Console.WriteLine("3. Wyświetl dostępne komponęty");
             Console.WriteLine("4. Wyjdź z programu");
@@ -43,19 +45,24 @@ static void program()
 
         }
     }
-    catch(Exception e) { Console.WriteLine($"Wystąpił błąd w głownej funkcji programu: {e}"); }
+    catch (Exception e) { Console.WriteLine($"Wystąpił błąd w głownej funkcji programu: {e}"); }
 }
 static void DodajKomponent()
 {
-    try{ 
+    try
+    {
         var kp = new List<Komponent>();
         while (true)
         {
             Console.WriteLine("Dodaj nowy komponent:");
-
+            Console.WriteLine("Do poprawnego działania nazwa musi być: CPU,MB,RAM,PSU,GPU,DRIVE");
             Console.Write("Nazwa: ");
             var nazwa = Console.ReadLine();
-
+            if(nazwa !="CPU" && nazwa != "MB" && nazwa != "RAM" && nazwa != "PSU" && nazwa != "GPU" && nazwa != "DRIVE")
+            {
+                Console.WriteLine("Nie poprawna nazwa");
+                break;
+            }
             Console.Write("Model: ");
             var model = Console.ReadLine();
 
@@ -71,19 +78,26 @@ static void DodajKomponent()
             Console.Write("Cena: ");
             if (double.TryParse(Console.ReadLine(), out var cena))
             {
-                var komponent = new Komponent
+                if (string.IsNullOrEmpty(nazwa) || string.IsNullOrEmpty(model) || string.IsNullOrEmpty(typZlacza) || string.IsNullOrEmpty(producent) || string.IsNullOrEmpty(parametr)) 
                 {
-                    Nazwa = nazwa,
-                    Model = model,
-                    TypZlacza = typZlacza,
-                    Producent = producent,
-                    Parametr = parametr,
-                    Cena = cena
-                };
+                    Console.WriteLine("Puste recordy");
+                }
+                else
+                {
+                    var komponent = new Komponent
+                    {
+                        Nazwa = nazwa,
+                        Model = model,
+                        TypZlacza = typZlacza,
+                        Producent = producent,
+                        Parametr = parametr,
+                        Cena = cena
+                    };
 
-                kp.Add(komponent);
+                    kp.Add(komponent);
 
-                Console.WriteLine("Komponent dodany do listy.");
+                    Console.WriteLine("Komponent dodany do listy.");
+                }
             }
             else
             {
@@ -104,81 +118,84 @@ static void DodajKomponent()
 }
 static void WyswietlKomponenty()
 {
-    try { 
-    Console.WriteLine("Menu:");
-    Console.WriteLine("1. Wszysktie komponęty");
-    Console.WriteLine("2. Kategorie");
-    Console.Write("Wybierz opcję: ");
-    var opcja = Console.ReadLine();
-    var csvConfiguration = new CsvConfiguration(CultureInfo.InvariantCulture)
+    try
     {
-        Delimiter = ";"
-    };
-    List<Komponent> records;
-    using (var reader = new StreamReader("komponenty.csv"))
-    using (var csv = new CsvReader(reader, csvConfiguration))
-    {
-        records = csv.GetRecords<Komponent>().ToList();
-    }
-    Console.WriteLine("Odczytane dane z pliku CSV:");
-    switch (opcja)
-    {
-        case "1":
-            break;
-        case "2":
-            Console.WriteLine("Kategoria:");
-            Console.WriteLine("1. CPU");
-            Console.WriteLine("2. Motherboard");
-            Console.WriteLine("3. RAM");
-            Console.WriteLine("4. PSU");
-            Console.WriteLine("5. GPU");
-            Console.WriteLine("6. Harddrive");
-            Console.Write("Wybierz opcję: ");
-            var kategoria = Console.ReadLine();
-            switch (kategoria)
-            {
-                case "1":
-                    records = records.FindAll(x => x.Nazwa == "CPU");
-                    break;
-                case "2":
-                    records = records.FindAll(x => x.Nazwa == "MB");
-                    break;
-                case "3":
-                    records = records.FindAll(x => x.Nazwa == "RAM");
-                    break;
-                case "4":
-                    records = records.FindAll(x => x.Nazwa == "PSU");
-                    break;
-                case "5":
-                    records = records.FindAll(x => x.Nazwa == "GPU");
-                    break;
-                case "6":
-                    records = records.FindAll(x => x.Nazwa == "DRIVE");
-                    break;
-                default:
-                    Console.WriteLine("Nieprawidłowa opcja");
-                    break;
-            }
-            break;
-        default:
-            Console.WriteLine("Nieprawidłowa opcja");
-            break;
-    }
-    foreach (var record in records)
-    {
-        record.Details();
-    }
+        Console.WriteLine("Menu:");
+        Console.WriteLine("1. Wszysktie komponęty");
+        Console.WriteLine("2. Kategorie");
+        Console.Write("Wybierz opcję: ");
+        var opcja = Console.ReadLine();
+        var csvConfiguration = new CsvConfiguration(CultureInfo.InvariantCulture)
+        {
+            Delimiter = ";"
+        };
+        List<Komponent> records;
+        using (var reader = new StreamReader("komponenty.csv"))
+        using (var csv = new CsvReader(reader, csvConfiguration))
+        {
+            records = csv.GetRecords<Komponent>().ToList();
+        }
+        Console.WriteLine("Odczytane dane z pliku CSV:");
+        switch (opcja)
+        {
+            case "1":
+                break;
+            case "2":
+                Console.WriteLine("Kategoria:");
+                Console.WriteLine("1. CPU");
+                Console.WriteLine("2. Motherboard");
+                Console.WriteLine("3. RAM");
+                Console.WriteLine("4. PSU");
+                Console.WriteLine("5. GPU");
+                Console.WriteLine("6. Harddrive");
+                Console.Write("Wybierz opcję: ");
+                var kategoria = Console.ReadLine();
+                switch (kategoria)
+                {
+                    case "1":
+                        records = records.FindAll(x => x.Nazwa == "CPU");
+                        break;
+                    case "2":
+                        records = records.FindAll(x => x.Nazwa == "MB");
+                        break;
+                    case "3":
+                        records = records.FindAll(x => x.Nazwa == "RAM");
+                        break;
+                    case "4":
+                        records = records.FindAll(x => x.Nazwa == "PSU");
+                        break;
+                    case "5":
+                        records = records.FindAll(x => x.Nazwa == "GPU");
+                        break;
+                    case "6":
+                        records = records.FindAll(x => x.Nazwa == "DRIVE");
+                        break;
+                    default:
+                        Console.WriteLine("Nieprawidłowa opcja");
+                        break;
+                }
+                break;
+            default:
+                Console.WriteLine("Nieprawidłowa opcja");
+                break;
+        }
+        foreach (var record in records)
+        {
+            record.Details();
+        }
     }
     catch (Exception e) { Console.WriteLine($"Wystąpił błąd w funkcji 'WyświetlKomponenty': {e}"); }
 }
 static void ZapiszDoPlikuCsv(List<Komponent> komponenty)
 {
-    try { 
+    try
+    {
         var csvConfiguration = new CsvConfiguration(CultureInfo.InvariantCulture)
         {
-            Delimiter = ";"
+            Delimiter = ";",
+            HasHeaderRecord = false
         };
-
+        //csvConfiguration.HasHeaderRecord = false;
         var writer = new StreamWriter("komponenty.csv", true);
         using (var csv = new CsvWriter(writer, csvConfiguration)) { csv.WriteRecords(komponenty); };
         Console.WriteLine("Dane zapisane do pliku komponenty.csv.");
@@ -187,7 +204,8 @@ static void ZapiszDoPlikuCsv(List<Komponent> komponenty)
 }
 static void WybierzZestaw()
 {
-    try { 
+    try
+    {
         Console.WriteLine("Podaj Socket procesora");
         var socket = Console.ReadLine();
 
@@ -208,65 +226,74 @@ static void WybierzZestaw()
             double cenaZestawu = 0;
             List<Komponent> zestaw = new();
             zestaw.Add(records.Find(x => x.Nazwa == "CPU" && x.TypZlacza == socket));
-            cenaZestawu += zestaw[0].Cena;
-            zestaw.Add(records.Find(x => x.Nazwa == "MB" && x.TypZlacza == socket));
-            cenaZestawu += zestaw[1].Cena;
-            zestaw.Add(records.Find(x => x.Nazwa == "RAM" && x.TypZlacza == zestaw[1].Parametr));
-            cenaZestawu += zestaw[2].Cena;
-            zestaw.Add(records.Find(x => x.Nazwa == "PSU"));
-            cenaZestawu += zestaw[3].Cena;
-            zestaw.Add(records.Find(x => x.Nazwa == "GPU"));
-            cenaZestawu += zestaw[4].Cena;
-            zestaw.Add(records.Find(x => x.Nazwa == "DRIVE"));
-            cenaZestawu += zestaw[5].Cena;
-            if(cenaZestawu > maksymalnaCena) 
+            if (zestaw[0] != null)
             {
-                Console.WriteLine("Nie da się stworzyc komputera z obecnych komponętów");
-            }
-            else
-            {
-            while (true) 
+                cenaZestawu += zestaw[0].Cena;
+                zestaw.Add(records.Find(x => x.Nazwa == "MB" && x.TypZlacza == socket));
+                cenaZestawu += zestaw[1].Cena;
+                zestaw.Add(records.Find(x => x.Nazwa == "RAM" && x.TypZlacza == zestaw[1].Parametr));
+                cenaZestawu += zestaw[2].Cena;
+                zestaw.Add(records.Find(x => x.Nazwa == "PSU"));
+                cenaZestawu += zestaw[3].Cena;
+                zestaw.Add(records.Find(x => x.Nazwa == "GPU"));
+                cenaZestawu += zestaw[4].Cena;
+                zestaw.Add(records.Find(x => x.Nazwa == "DRIVE"));
+                cenaZestawu += zestaw[5].Cena;
+                if (cenaZestawu > maksymalnaCena)
                 {
-                List<Komponent> zestawFor = zestaw.ToList();
-                bool czyZmienione = false;
-                    foreach (var k in zestaw)
+                    Console.WriteLine("Nie da się stworzyc komputera z obecnych komponętów");
+                }
+                else
+                {
+                    while (true)
                     {
-                        Komponent newk;
-                        if (k.Nazwa == "CPU" || k.Nazwa == "MB" || k.Nazwa == "RAM")
+                        List<Komponent> zestawFor = zestaw.ToList();
+                        bool czyZmienione = false;
+                        foreach (var k in zestaw)
                         {
-                            newk = records.Find(x => x.Nazwa == k.Nazwa && x.Cena > k.Cena && x.TypZlacza == k.TypZlacza && (x.Model != k.Model && x.TypZlacza != k.TypZlacza));
-                        }
-                        else
-                        {
-                            newk = records.Find(x => x.Nazwa == k.Nazwa && x.Cena > k.Cena && (x.Model != k.Model && x.TypZlacza != k.TypZlacza));
-                        }
-                        if (newk != null) {
-                            if (cenaZestawu - k.Cena + newk.Cena < maksymalnaCena)
+                            Komponent newk;
+                            if (k.Nazwa == "CPU" || k.Nazwa == "MB" || k.Nazwa == "RAM")
                             {
-                                int index = zestawFor.FindIndex(x => x == k);
-                                if (index != -1)
+                                newk = records.Find(x => x.Nazwa == k.Nazwa && x.Cena > k.Cena && x.TypZlacza == k.TypZlacza && (x.Model != k.Model && x.TypZlacza != k.TypZlacza));
+                            }
+                            else
+                            {
+                                newk = records.Find(x => x.Nazwa == k.Nazwa && x.Cena > k.Cena && (x.Model != k.Model && x.TypZlacza != k.TypZlacza));
+                            }
+                            if (newk != null)
+                            {
+                                if (cenaZestawu - k.Cena + newk.Cena < maksymalnaCena)
                                 {
-                                    cenaZestawu -= k.Cena;
-                                    cenaZestawu += newk.Cena;
-                                    zestawFor[index] = newk;
-                                    czyZmienione = true;
+                                    int index = zestawFor.FindIndex(x => x == k);
+                                    if (index != -1)
+                                    {
+                                        cenaZestawu -= k.Cena;
+                                        cenaZestawu += newk.Cena;
+                                        zestawFor[index] = newk;
+                                        czyZmienione = true;
+                                    }
                                 }
                             }
                         }
+                        zestaw = zestawFor.ToList();
+                        if (czyZmienione)
+                        {
+                            break;
+                        }
                     }
-                    zestaw = zestawFor.ToList();
-                    if (czyZmienione)
+                    Console.WriteLine($"Wybrany zestaw za cenę: {cenaZestawu}");
+                    foreach (var record in zestaw)
                     {
-                        break;
+                        record.Details();
                     }
-                }
-                Console.WriteLine($"Wybrany zestaw za cenę: {cenaZestawu}");
-                foreach (var record in zestaw)
-                {
-                    record.Details();
                 }
             }
+            else
+            {
+                Console.WriteLine("Nie poprawny socket");
+            }
         }
+
         else
         {
             Console.WriteLine("Błąd podczas wprowadzania ceny. Spróbuj ponownie.");
