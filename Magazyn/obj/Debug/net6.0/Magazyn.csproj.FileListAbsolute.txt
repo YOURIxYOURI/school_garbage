@@ -1,0 +1,14 @@
+D:\projects\Magazyn\bin\Debug\net6.0\Magazyn.exe
+D:\projects\Magazyn\bin\Debug\net6.0\Magazyn.deps.json
+D:\projects\Magazyn\bin\Debug\net6.0\Magazyn.runtimeconfig.json
+D:\projects\Magazyn\bin\Debug\net6.0\Magazyn.dll
+D:\projects\Magazyn\bin\Debug\net6.0\Magazyn.pdb
+D:\projects\Magazyn\obj\Debug\net6.0\Magazyn.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\Magazyn\obj\Debug\net6.0\Magazyn.AssemblyInfoInputs.cache
+D:\projects\Magazyn\obj\Debug\net6.0\Magazyn.AssemblyInfo.cs
+D:\projects\Magazyn\obj\Debug\net6.0\Magazyn.csproj.CoreCompileInputs.cache
+D:\projects\Magazyn\obj\Debug\net6.0\Magazyn.dll
+D:\projects\Magazyn\obj\Debug\net6.0\refint\Magazyn.dll
+D:\projects\Magazyn\obj\Debug\net6.0\Magazyn.pdb
+D:\projects\Magazyn\obj\Debug\net6.0\Magazyn.genruntimeconfig.cache
+D:\projects\Magazyn\obj\Debug\net6.0\ref\Magazyn.dll
